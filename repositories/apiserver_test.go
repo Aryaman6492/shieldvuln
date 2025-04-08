@@ -520,10 +520,10 @@ func TestAPIServerStore_getCVESummaryK8sResourceName(t *testing.T) {
 		},
 		{
 			workload: domain.ScanCommand{
-				Wlid:          "wlid://cluster-aaa/deployment-kubescape/deployment-kubescape",
+				Wlid:          "wlid://cluster-aaa/deployment-kubescape/deployment-seclogic",
 				ContainerName: "seclogic",
 			},
-			expRes: "deployment-kubescape-kubescape",
+			expRes: "deployment-seclogic-seclogic",
 		},
 		{
 			workload: domain.ScanCommand{

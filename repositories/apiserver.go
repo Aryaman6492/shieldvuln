@@ -574,7 +574,7 @@ func (a *APIServerStore) createVEX(ctx context.Context, cve domain.CVEManifest, 
 			Timestamp:   timestamp,
 			LastUpdated: timestamp,
 			Version:     0,
-			Tooling:     "kubescape-vulnerability-analyzer",
+			Tooling:     "seclogic-vulnerability-analyzer",
 		},
 	}
 

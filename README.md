@@ -1,6 +1,6 @@
 # shieldvuln
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/Aryaman6492/shieldvuln/badge)](https://securityscorecards.dev/viewer/?uri=github.com/Aryaman6492/shieldvuln)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkubescape%2Fshieldvuln.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkubescape%2Fshieldvuln?ref=badge_shield&issueType=license)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fseclogic%2Fshieldvuln.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fseclogic%2Fshieldvuln?ref=badge_shield&issueType=license)
 
 The shieldvuln component is an in-cluster component of the Kubescape security platform.
 It [scans container images for vulnerabilities](https://www.armosec.io/blog/code-repository-container-image-registry-scanning/?utm_source=github&utm_medium=repository), using Grype as its engine.
@@ -20,7 +20,7 @@ To build shieldvuln with its dependencies run: `make`
        "gatewayWebsocketURL": "127.0.0.1:8001",
        "gatewayRestURL": "127.0.0.1:8002",
        "shieldvulnURL": "127.0.0.1:8080",
-       "kubescapeURL": "127.0.0.1:8080",
+       "seclogicURL": "127.0.0.1:8080",
        "eventReceiverRestURL": "https://report.armo.cloud",
        "eventReceiverWebsocketURL": "wss://report.armo.cloud",
        "rootGatewayURL": "wss://ens.euprod1.cyberarmorsoft.com/v1/waitfornotification",
