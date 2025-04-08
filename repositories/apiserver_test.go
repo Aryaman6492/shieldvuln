@@ -90,14 +90,14 @@ func TestAPIServerStore_GetCVE(t *testing.T) {
 	}
 	workload := domain.ScanCommand{
 		ImageHash:     "sha256:ead0a4a53df89fd173874b46093b6e62d8c72967bbf606d672c9e8c9b601a4fc",
-		InstanceID:    "apiVersion-apps/v1/namespace-kubescape/kind-ReplicaSet/name-kubevuln-65bfbfdcdd/containerName-kubevuln",
+		InstanceID:    "apiVersion-apps/v1/namespace-kubescape/kind-ReplicaSet/name-shieldvuln-65bfbfdcdd/containerName-shieldvuln",
 		Wlid:          "wlid://cluster-aaa/namespace-anyNamespaceJob/job-anyJob",
 		ImageTag:      "registry.k8s.io/coredns/coredns:v1.10.1",
 		ContainerName: "anyJobContName",
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			a := NewFakeAPIServerStorage("kubescape")
+			a := NewFakeAPIServerStorage("seclogic")
 			_, err := a.GetCVE(tt.args.ctx, tt.args.name, tt.args.SBOMCreatorVersion, tt.args.CVEScannerVersion, tt.args.CVEDBVersion)
 			require.NoError(t, err)
 			tt.args.ctx = context.WithValue(tt.args.ctx, domain.WorkloadKey{}, workload)
@@ -114,7 +114,7 @@ func TestAPIServerStore_GetCVE(t *testing.T) {
 
 func TestAPIServerStore_UpdateCVE(t *testing.T) {
 	ctx := context.TODO()
-	a := NewFakeAPIServerStorage("kubescape")
+	a := NewFakeAPIServerStorage("seclogic")
 	cvep := domain.CVEManifest{
 		Name: name,
 		Content: &v1beta1.GrypeDocument{
@@ -125,7 +125,7 @@ func TestAPIServerStore_UpdateCVE(t *testing.T) {
 	}
 	workload := domain.ScanCommand{
 		ImageHash:     "sha256:ead0a4a53df89fd173874b46093b6e62d8c72967bbf606d672c9e8c9b601a4fc",
-		InstanceID:    "apiVersion-apps/v1/namespace-kubescape/kind-ReplicaSet/name-kubevuln-65bfbfdcdd/containerName-kubevuln",
+		InstanceID:    "apiVersion-apps/v1/namespace-kubescape/kind-ReplicaSet/name-shieldvuln-65bfbfdcdd/containerName-shieldvuln",
 		Wlid:          "wlid://cluster-aaa/namespace-anyNamespaceJob/job-anyJob",
 		ImageTag:      "registry.k8s.io/coredns/coredns:v1.10.1",
 		ContainerName: "anyJobContName",
@@ -208,7 +208,7 @@ func TestAPIServerStore_GetSBOM(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			a := NewFakeAPIServerStorage("kubescape")
+			a := NewFakeAPIServerStorage("seclogic")
 			_, err := a.GetSBOM(tt.args.ctx, tt.args.name, tt.args.SBOMCreatorVersion)
 			require.NoError(t, err)
 			err = a.StoreSBOM(tt.args.ctx, tt.sbom, false)
@@ -294,12 +294,12 @@ func TestAPIServerStore_storeVEX(t *testing.T) {
 	cveManifest := tools.FileToCVEManifest("testdata/nginx-cve.json")
 	cveManifestFiltered := tools.FileToCVEManifest("testdata/nginx-cve-filtered.json")
 
-	a := NewFakeAPIServerStorage("kubescape")
+	a := NewFakeAPIServerStorage("seclogic")
 
 	ctx := context.TODO()
 	workload := domain.ScanCommand{
 		ImageHash:     "sha256:32fdf92b4e986e109e4db0865758020cb0c3b70d6ba80d02fe87bad5cc3dc228",
-		InstanceID:    "apiVersion-apps/v1/namespace-kubescape/kind-ReplicaSet/name-kubevuln-65bfbfdcdd/containerName-kubevuln",
+		InstanceID:    "apiVersion-apps/v1/namespace-kubescape/kind-ReplicaSet/name-shieldvuln-65bfbfdcdd/containerName-shieldvuln",
 		Wlid:          "wlid://cluster-aaa/namespace-anyNamespaceJob/job-anyJob",
 		ImageTag:      "registry.k8s.io/coredns/coredns:v1.10.1",
 		ContainerName: "anyJobContName",
@@ -521,16 +521,16 @@ func TestAPIServerStore_getCVESummaryK8sResourceName(t *testing.T) {
 		{
 			workload: domain.ScanCommand{
 				Wlid:          "wlid://cluster-aaa/deployment-kubescape/deployment-kubescape",
-				ContainerName: "kubescape",
+				ContainerName: "seclogic",
 			},
 			expRes: "deployment-kubescape-kubescape",
 		},
 		{
 			workload: domain.ScanCommand{
-				Wlid:          "wlid://cluster-aaa/namespace-kubescape/deployment-kubevuln",
-				ContainerName: "kubevuln",
+				Wlid:          "wlid://cluster-aaa/namespace-kubescape/deployment-shieldvuln",
+				ContainerName: "shieldvuln",
 			},
-			expRes: "deployment-kubevuln-kubevuln",
+			expRes: "deployment-shieldvuln-shieldvuln",
 		},
 		{
 			workload: domain.ScanCommand{

@@ -1,12 +1,12 @@
-# Kubevuln
+# shieldvuln
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/Aryaman6492/shieldvuln/badge)](https://securityscorecards.dev/viewer/?uri=github.com/Aryaman6492/shieldvuln)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkubescape%2Fkubevuln.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkubescape%2Fkubevuln?ref=badge_shield&issueType=license)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkubescape%2Fshieldvuln.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkubescape%2Fshieldvuln?ref=badge_shield&issueType=license)
 
-The Kubevuln component is an in-cluster component of the Kubescape security platform.
+The shieldvuln component is an in-cluster component of the Kubescape security platform.
 It [scans container images for vulnerabilities](https://www.armosec.io/blog/code-repository-container-image-registry-scanning/?utm_source=github&utm_medium=repository), using Grype as its engine.
 
-## Build Kubevuln
-To build kubevuln with its dependencies run: `make`
+## Build shieldvuln
+To build shieldvuln with its dependencies run: `make`
 
 ## Configuration
 1. Load config file using the `CONFIG` environment variable
@@ -19,7 +19,7 @@ To build kubevuln with its dependencies run: `make`
    {
        "gatewayWebsocketURL": "127.0.0.1:8001",
        "gatewayRestURL": "127.0.0.1:8002",
-       "kubevulnURL": "127.0.0.1:8080",
+       "shieldvulnURL": "127.0.0.1:8080",
        "kubescapeURL": "127.0.0.1:8080",
        "eventReceiverRestURL": "https://report.armo.cloud",
        "eventReceiverWebsocketURL": "wss://report.armo.cloud",
@@ -55,7 +55,7 @@ You can use the samples files below to setup your [VS code](https://www.armosec.
             "program":  "${workspaceRoot}",
                  "env": {
                      "PORT": "8080",
-                     "NAMESPACE": "kubescape",
+                     "NAMESPACE": "seclogic",
                      "CONFIG": "${workspaceRoot}/.vscode/clusterData.json",
             },
             "args": [
@@ -65,9 +65,9 @@ You can use the samples files below to setup your [VS code](https://www.armosec.
     ]
 }
 ```
-We configure the Kubevuln to listen to port 8080, and define the configuration in the clusterData.json file [as mentioned above](https://github.com/Aryaman6492/shieldvuln#configuration).
+We configure the shieldvuln to listen to port 8080, and define the configuration in the clusterData.json file [as mentioned above](https://github.com/Aryaman6492/shieldvuln#configuration).
 </details>
 
 ## Changelog
 
-Kubevuln changes are tracked on the [release](https://github.com/Aryaman6492/shieldvuln/releases) page
+shieldvuln changes are tracked on the [release](https://github.com/Aryaman6492/shieldvuln/releases) page

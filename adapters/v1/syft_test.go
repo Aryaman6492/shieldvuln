@@ -105,7 +105,7 @@ func Test_syftAdapter_CreateSBOM(t *testing.T) {
 		{
 			name:     "registry scan",
 			imageID:  "",
-			imageTag: "quay.io/matthiasb_1/kubevuln:latest",
+			imageTag: "quay.io/matthiasb_1/shieldvuln:latest",
 			wantErr:  false,
 		},
 	}
@@ -181,28 +181,28 @@ func TestNormalizeImageID(t *testing.T) {
 		want     string
 	}{
 		{
-			name:     "replicaset-kubevuln-666dbffc4f-kubevuln-ca1b-6f47",
-			imageID:  "quay.io/kubescape/kubevuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
-			imageTag: "quay.io/kubescape/kubevuln:v0.3.2",
-			want:     "quay.io/kubescape/kubevuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
+			name:     "replicaset-shieldvuln-666dbffc4f-shieldvuln-ca1b-6f47",
+			imageID:  "quay.io/kubescape/shieldvuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
+			imageTag: "quay.io/kubescape/shieldvuln:v0.3.2",
+			want:     "quay.io/kubescape/shieldvuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
 		},
 		{
 			name:     "trap",
 			imageID:  "sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
-			imageTag: "quay.io/kubescape/kubevuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
-			want:     "quay.io/kubescape/kubevuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
+			imageTag: "quay.io/kubescape/shieldvuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
+			want:     "quay.io/kubescape/shieldvuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
 		},
 		{
 			name:     "trap 2",
 			imageID:  "@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
-			imageTag: "quay.io/kubescape/kubevuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
-			want:     "quay.io/kubescape/kubevuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
+			imageTag: "quay.io/kubescape/shieldvuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
+			want:     "quay.io/kubescape/shieldvuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
 		},
 		{
 			name:     "trap 3",
 			imageID:  "titi@toto@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
-			imageTag: "quay.io/kubescape/kubevuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
-			want:     "quay.io/kubescape/kubevuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
+			imageTag: "quay.io/kubescape/shieldvuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
+			want:     "quay.io/kubescape/shieldvuln@sha256:94cbbb94f8d6bdf2529d5f9c5279ac4c7411182f4e8e5a3d0b5e8f10a465f73a",
 		},
 		{
 			name:     "quay.io-kubescape-kubescape-v3.0.3-88a469",

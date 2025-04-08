@@ -39,7 +39,7 @@ func LoadConfig(path string) (Config, error) {
 	viper.SetDefault("scanConcurrency", 1)
 	viper.SetDefault("scanTimeout", 5*time.Minute)
 	viper.SetDefault("vexGeneration", false)
-	viper.SetDefault("namespace", "kubescape")
+	viper.SetDefault("namespace", "seclogic")
 
 	viper.AutomaticEnv()
 

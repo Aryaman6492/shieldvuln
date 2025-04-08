@@ -1,5 +1,5 @@
 DOCKERFILE_PATH=./build/Dockerfile
-BINARY_NAME=kubevuln
+BINARY_NAME=shieldvuln
 
 IMAGE?=quay.io/kubescape/$(BINARY_NAME)
 TAG=v0.0.0

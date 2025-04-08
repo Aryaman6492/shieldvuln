@@ -7,7 +7,7 @@
             "customerGUID": "fb2a2e59-2f96-4966-8ec2-92c3ba5cad18",
             "kind": "deployment",
             "name": "otel-collector",
-            "namespace": "kubescape",
+            "namespace": "seclogic",
             "workloadHash": "11686041291323602851"
         }
     },
@@ -20,7 +20,7 @@
                 "customerGUID": "fb2a2e59-2f96-4966-8ec2-92c3ba5cad18",
                 "kind": "deployment",
                 "name": "otel-collector",
-                "namespace": "kubescape",
+                "namespace": "seclogic",
                 "workloadHash": "11686041291323602851"
             }
         },
@@ -42,7 +42,7 @@
         "imageHash": "docker.io/otel/opentelemetry-collector@sha256:54f9e300089317cd4f90f9dee36c27cde25cc8b62670ce8d507de9597255f80d",
         "imageTag": "otel/opentelemetry-collector:0.70.0",
         "cluster": "arm-rogeliodh-dev",
-        "namespace": "kubescape",
+        "namespace": "seclogic",
         "containerName": "otel-collector",
         "versionImage": "",
         "status": "Success",
@@ -147,7 +147,7 @@
             },
             {
                 "attribute": "namespace",
-                "value": "kubescape",
+                "value": "seclogic",
                 "source": "designators.attributes"
             },
             {
@@ -181,7 +181,7 @@
                     "customerGUID": "fb2a2e59-2f96-4966-8ec2-92c3ba5cad18",
                     "kind": "deployment",
                     "name": "otel-collector",
-                    "namespace": "kubescape",
+                    "namespace": "seclogic",
                     "workloadHash": "11686041291323602851"
                 }
             },
@@ -235,7 +235,7 @@
                 },
                 {
                     "attribute": "namespace",
-                    "value": "kubescape",
+                    "value": "seclogic",
                     "source": "designators.attributes"
                 },
                 {
@@ -272,7 +272,7 @@
                     "customerGUID": "fb2a2e59-2f96-4966-8ec2-92c3ba5cad18",
                     "kind": "deployment",
                     "name": "otel-collector",
-                    "namespace": "kubescape",
+                    "namespace": "seclogic",
                     "workloadHash": "11686041291323602851"
                 }
             },
@@ -326,7 +326,7 @@
                 },
                 {
                     "attribute": "namespace",
-                    "value": "kubescape",
+                    "value": "seclogic",
                     "source": "designators.attributes"
                 },
                 {
@@ -363,7 +363,7 @@
                     "customerGUID": "fb2a2e59-2f96-4966-8ec2-92c3ba5cad18",
                     "kind": "deployment",
                     "name": "otel-collector",
-                    "namespace": "kubescape",
+                    "namespace": "seclogic",
                     "workloadHash": "11686041291323602851"
                 }
             },
@@ -417,7 +417,7 @@
                 },
                 {
                     "attribute": "namespace",
-                    "value": "kubescape",
+                    "value": "seclogic",
                     "source": "designators.attributes"
                 },
                 {
@@ -454,7 +454,7 @@
                     "customerGUID": "fb2a2e59-2f96-4966-8ec2-92c3ba5cad18",
                     "kind": "deployment",
                     "name": "otel-collector",
-                    "namespace": "kubescape",
+                    "namespace": "seclogic",
                     "workloadHash": "11686041291323602851"
                 }
             },
@@ -508,7 +508,7 @@
                 },
                 {
                     "attribute": "namespace",
-                    "value": "kubescape",
+                    "value": "seclogic",
                     "source": "designators.attributes"
                 },
                 {
@@ -545,7 +545,7 @@
                     "customerGUID": "fb2a2e59-2f96-4966-8ec2-92c3ba5cad18",
                     "kind": "deployment",
                     "name": "otel-collector",
-                    "namespace": "kubescape",
+                    "namespace": "seclogic",
                     "workloadHash": "11686041291323602851"
                 }
             },
@@ -599,7 +599,7 @@
                 },
                 {
                     "attribute": "namespace",
-                    "value": "kubescape",
+                    "value": "seclogic",
                     "source": "designators.attributes"
                 },
                 {
@@ -636,7 +636,7 @@
                     "customerGUID": "fb2a2e59-2f96-4966-8ec2-92c3ba5cad18",
                     "kind": "deployment",
                     "name": "otel-collector",
-                    "namespace": "kubescape",
+                    "namespace": "seclogic",
                     "workloadHash": "11686041291323602851"
                 }
             },
@@ -690,7 +690,7 @@
                 },
                 {
                     "attribute": "namespace",
-                    "value": "kubescape",
+                    "value": "seclogic",
                     "source": "designators.attributes"
                 },
                 {
@@ -727,7 +727,7 @@
                     "customerGUID": "fb2a2e59-2f96-4966-8ec2-92c3ba5cad18",
                     "kind": "deployment",
                     "name": "otel-collector",
-                    "namespace": "kubescape",
+                    "namespace": "seclogic",
                     "workloadHash": "11686041291323602851"
                 }
             },
@@ -781,7 +781,7 @@
                 },
                 {
                     "attribute": "namespace",
-                    "value": "kubescape",
+                    "value": "seclogic",
                     "source": "designators.attributes"
                 },
                 {
@@ -818,7 +818,7 @@
                     "customerGUID": "fb2a2e59-2f96-4966-8ec2-92c3ba5cad18",
                     "kind": "deployment",
                     "name": "otel-collector",
-                    "namespace": "kubescape",
+                    "namespace": "seclogic",
                     "workloadHash": "11686041291323602851"
                 }
             },
@@ -872,7 +872,7 @@
                 },
                 {
                     "attribute": "namespace",
-                    "value": "kubescape",
+                    "value": "seclogic",
                     "source": "designators.attributes"
                 },
                 {

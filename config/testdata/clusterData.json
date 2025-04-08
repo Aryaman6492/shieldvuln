@@ -1,8 +1,8 @@
 {
   "gatewayWebsocketURL": "gateway:8001",
   "gatewayRestURL": "gateway:8002",
-  "vulnScanURL": "kubevuln:8080",
-  "kubevulnURL": "kubevuln:8080",
+  "vulnScanURL": "shieldvuln:8080",
+  "shieldvulnURL": "shieldvuln:8080",
   "kubescapeURL": "kubescape:8080",
   "triggerNewImageScan": "false",
   "accountID": "12345",

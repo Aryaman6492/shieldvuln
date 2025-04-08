@@ -118,23 +118,23 @@ func TestNormalizeReference(t *testing.T) {
 		{
 			name: "quay image tag",
 			args: args{
-				ref: "quay.io/kubescape/kubevuln:latest",
+				ref: "quay.io/kubescape/shieldvuln:latest",
 			},
-			want: "quay.io/kubescape/kubevuln:latest",
+			want: "quay.io/kubescape/shieldvuln:latest",
 		},
 		{
 			name: "quay image sha",
 			args: args{
-				ref: "quay.io/kubescape/kubevuln@sha256:616d1d4312551b94088deb6ddab232ecabbbff0c289949a0d5f12d4b527c3f8a",
+				ref: "quay.io/kubescape/shieldvuln@sha256:616d1d4312551b94088deb6ddab232ecabbbff0c289949a0d5f12d4b527c3f8a",
 			},
-			want: "quay.io/kubescape/kubevuln@sha256:616d1d4312551b94088deb6ddab232ecabbbff0c289949a0d5f12d4b527c3f8a",
+			want: "quay.io/kubescape/shieldvuln@sha256:616d1d4312551b94088deb6ddab232ecabbbff0c289949a0d5f12d4b527c3f8a",
 		},
 		{
 			name: "quay image tag sha",
 			args: args{
-				ref: "quay.io/kubescape/kubevuln:latest@sha256:616d1d4312551b94088deb6ddab232ecabbbff0c289949a0d5f12d4b527c3f8a",
+				ref: "quay.io/kubescape/shieldvuln:latest@sha256:616d1d4312551b94088deb6ddab232ecabbbff0c289949a0d5f12d4b527c3f8a",
 			},
-			want: "quay.io/kubescape/kubevuln:latest@sha256:616d1d4312551b94088deb6ddab232ecabbbff0c289949a0d5f12d4b527c3f8a",
+			want: "quay.io/kubescape/shieldvuln:latest@sha256:616d1d4312551b94088deb6ddab232ecabbbff0c289949a0d5f12d4b527c3f8a",
 		},
 		{
 			name: "some image other registry",

@@ -43,7 +43,7 @@ func main() {
 
 	// to enable otel, set OTEL_COLLECTOR_SVC=otel-collector:4317
 	if otelHost, present := os.LookupEnv("OTEL_COLLECTOR_SVC"); present {
-		ctx = logger.InitOtel("kubevuln",
+		ctx = logger.InitOtel("shieldvuln",
 			os.Getenv("RELEASE"),
 			credentials.Account,
 			c.ClusterName,
@@ -88,7 +88,7 @@ func main() {
 
 	group := router.Group(apis.VulnerabilityScanCommandVersion)
 	{
-		group.Use(otelgin.Middleware("kubevuln-svc"))
+		group.Use(otelgin.Middleware("shieldvuln-svc"))
 		group.POST("/"+apis.SBOMCalculationCommandPath, controller.GenerateSBOM)
 		group.POST("/"+apis.ApplicationProfileScanCommandPath, controller.ScanAP)
 		group.POST("/"+apis.ContainerScanCommandPath, controller.ScanCVE)
@@ -127,5 +127,5 @@ func main() {
 	// Purging the controller worker queue
 	controller.Shutdown()
 
-	logger.L().Info("kubevuln exiting")
+	logger.L().Info("shieldvuln exiting")
 }

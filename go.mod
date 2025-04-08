@@ -5,6 +5,7 @@ go 1.23.2
 toolchain go1.23.6
 
 require (
+	github.com/Aryaman6492/storage v0.0.146
 	github.com/DmitriyVTitov/size v1.5.0
 	github.com/adrg/xdg v0.5.3
 	github.com/akyoto/cache v1.0.6
@@ -30,7 +31,6 @@ require (
 	github.com/kubescape/backend v0.0.18-0.20231228073313-741ad2d0a7ad
 	github.com/kubescape/go-logger v0.0.23
 	github.com/kubescape/k8s-interface v0.0.188
-	github.com/Aryaman6492/storage v0.0.146
 	github.com/opencontainers/go-digest v1.0.0
 	github.com/openvex/go-vex v0.2.5
 	github.com/spf13/viper v1.19.0
@@ -44,6 +44,8 @@ require (
 	k8s.io/utils v0.0.0-20241210054802-24370beab758
 	schneider.vip/problem v1.8.1
 )
+
+replace github.com/Aryaman6492/storage => ../storage
 
 require (
 	cloud.google.com/go v0.112.1 // indirect

@@ -7,16 +7,16 @@ ARG TARGETOS TARGETARCH
 RUN --mount=target=. \
     --mount=type=cache,target=/root/.cache/go-build \
     --mount=type=cache,target=/go/pkg \
-    GOOS=$TARGETOS GOARCH=$TARGETARCH go build -o /out/kubevuln cmd/http/main.go
+    GOOS=$TARGETOS GOARCH=$TARGETARCH go build -o /out/shieldvuln cmd/http/main.go
 
 FROM gcr.io/distroless/static-debian12:nonroot
 
 USER nonroot
 WORKDIR /home/nonroot/
 
-COPY --from=builder /out/kubevuln /usr/bin/kubevuln
+COPY --from=builder /out/shieldvuln /usr/bin/shieldvuln
 
 ARG image_version
 ENV RELEASE=$image_version
 
-ENTRYPOINT ["kubevuln"]
+ENTRYPOINT ["shieldvuln"]
