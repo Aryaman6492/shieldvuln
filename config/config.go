@@ -4,9 +4,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/kubescape/backend/pkg/servicediscovery"
-	"github.com/kubescape/backend/pkg/servicediscovery/schema"
-	v2 "github.com/kubescape/backend/pkg/servicediscovery/v2"
+	"github.com/Aryaman6492/backend/pkg/servicediscovery"
+	"github.com/Aryaman6492/backend/pkg/servicediscovery/schema"
+	v2 "github.com/Aryaman6492/backend/pkg/servicediscovery/v2"
 	"github.com/spf13/viper"
 )
 

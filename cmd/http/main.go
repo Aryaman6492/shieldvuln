@@ -11,7 +11,7 @@ import (
 
 	"github.com/armosec/armoapi-go/apis"
 	"github.com/gin-gonic/gin"
-	"github.com/kubescape/backend/pkg/utils"
+	"github.com/Aryaman6492/backend/pkg/utils"
 	"github.com/kubescape/go-logger"
 	"github.com/kubescape/go-logger/helpers"
 	"github.com/Aryaman6492/shieldvuln/adapters"
