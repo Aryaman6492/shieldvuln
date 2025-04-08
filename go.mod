@@ -5,7 +5,9 @@ go 1.23.2
 toolchain go1.23.6
 
 require (
+	github.com/Aryaman6492/backend v0.0.18-0.20231228073313-741ad2d0a7ad
 	github.com/Aryaman6492/storage v0.0.146
+	github.com/Aryaman6492/utils-k8s-go v0.0.30
 	github.com/DmitriyVTitov/size v1.5.0
 	github.com/adrg/xdg v0.5.3
 	github.com/akyoto/cache v1.0.6
@@ -14,9 +16,8 @@ require (
 	github.com/anchore/stereoscope v0.0.11
 	github.com/anchore/syft v1.18.1
 	github.com/aquilax/truncate v1.0.0
-	github.com/armosec/armoapi-go v0.0.512
+	github.com/armosec/armoapi-go v0.0.552
 	github.com/armosec/utils-go v0.0.58
-	github.com/Aryaman6492/utils-k8s-go v0.0.30
 	github.com/deckarep/golang-set/v2 v2.6.0
 	github.com/distribution/distribution v2.8.2+incompatible
 	github.com/docker/docker v27.4.0+incompatible
@@ -28,7 +29,6 @@ require (
 	github.com/google/uuid v1.6.0
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/kinbiko/jsonassert v1.1.1
-	github.com/Aryaman6492/backend v0.0.18-0.20231228073313-741ad2d0a7ad
 	github.com/kubescape/go-logger v0.0.23
 	github.com/kubescape/k8s-interface v0.0.188
 	github.com/opencontainers/go-digest v1.0.0
@@ -46,7 +46,9 @@ require (
 )
 
 replace github.com/Aryaman6492/utils-k8s-go => /home/ripeey/Desktop/cqs-sensor/copycon/utils-k8s-go
+
 replace github.com/Aryaman6492/storage => ../storage
+
 replace github.com/Aryaman6492/backend => /home/ripeey/Desktop/cqs-sensor/copycon/backend
 
 require (
@@ -90,6 +92,7 @@ require (
 	github.com/aquasecurity/go-pep440-version v0.0.0-20210121094942-22b2f8951d46 // indirect
 	github.com/aquasecurity/go-version v0.0.0-20210121072130-637058cfe492 // indirect
 	github.com/armosec/gojay v1.2.17 // indirect
+	github.com/armosec/utils-k8s-go v0.0.30 // indirect
 	github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2 // indirect
 	github.com/aws/aws-sdk-go v1.55.5 // indirect
 	github.com/aws/aws-sdk-go-v2 v1.30.5 // indirect
@@ -228,8 +231,8 @@ require (
 	github.com/knqyf263/go-apk-version v0.0.0-20200609155635-041fdbb8563f // indirect
 	github.com/knqyf263/go-deb-version v0.0.0-20190517075300-09fca494f03d // indirect
 	github.com/knqyf263/go-rpmdb v0.1.1 // indirect
-	github.com/kubescape/opa-utils v0.0.268 // indirect
-	github.com/kubescape/rbac-utils v0.0.20 // indirect
+	github.com/kubescape/opa-utils v0.0.278 // indirect
+	github.com/kubescape/rbac-utils v0.0.21-0.20230806101615-07e36f555520 // indirect
 	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/leodido/go-urn v1.2.4 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
@@ -285,7 +288,7 @@ require (
 	github.com/prometheus/client_model v0.6.1 // indirect
 	github.com/prometheus/common v0.61.0 // indirect
 	github.com/prometheus/procfs v0.15.1 // indirect
-	github.com/rcrowley/go-metrics v0.0.0-20200313005456-10cdbea86bc0 // indirect
+	github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475 // indirect
 	github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/saferwall/pe v1.5.6 // indirect
