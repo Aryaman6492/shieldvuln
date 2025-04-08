@@ -16,7 +16,7 @@ require (
 	github.com/aquilax/truncate v1.0.0
 	github.com/armosec/armoapi-go v0.0.512
 	github.com/armosec/utils-go v0.0.58
-	github.com/armosec/utils-k8s-go v0.0.30
+	github.com/Aryaman6492/utils-k8s-go v0.0.30
 	github.com/deckarep/golang-set/v2 v2.6.0
 	github.com/distribution/distribution v2.8.2+incompatible
 	github.com/docker/docker v27.4.0+incompatible
@@ -45,6 +45,7 @@ require (
 	schneider.vip/problem v1.8.1
 )
 
+replace github.com/Aryaman6492/utils-k8s-go => /home/ripeey/Desktop/cqs-sensor/copycon/utils-k8s-go
 replace github.com/Aryaman6492/storage => ../storage
 replace github.com/Aryaman6492/backend => /home/ripeey/Desktop/cqs-sensor/copycon/backend
 

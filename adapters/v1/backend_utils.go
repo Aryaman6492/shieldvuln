@@ -15,7 +15,7 @@ import (
 	v1 "github.com/armosec/armoapi-go/containerscan/v1"
 	"github.com/armosec/armoapi-go/identifiers"
 	"github.com/armosec/utils-go/httputils"
-	"github.com/armosec/utils-k8s-go/armometadata"
+	"github.com/Aryaman6492/utils-k8s-go/armometadata"
 	beClient "github.com/Aryaman6492/backend/pkg/client/v1"
 	beServer "github.com/Aryaman6492/backend/pkg/server/v1"
 	"github.com/kubescape/go-logger"

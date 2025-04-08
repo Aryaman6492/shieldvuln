@@ -19,7 +19,7 @@ import (
 	v1 "github.com/armosec/armoapi-go/containerscan/v1"
 	"github.com/armosec/armoapi-go/identifiers"
 	"github.com/armosec/utils-go/httputils"
-	"github.com/armosec/utils-k8s-go/armometadata"
+	"github.com/Aryaman6492/utils-k8s-go/armometadata"
 	"github.com/Aryaman6492/shieldvuln/core/domain"
 	"github.com/stretchr/testify/assert"
 	"k8s.io/utils/pointer"
